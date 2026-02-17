@@ -1,0 +1,546 @@
+
+
+:root {
+    --accent: #1db954;
+    --dark: #0e0e0e;
+    --glass: rgba(255, 255, 255, 0.08);
+    --border: rgba(255, 255, 255, 0.15);
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at top, #1f2933, #020617);
+    color: white;
+    overflow-x: hidden;
+    touch-action: pan-x pan-y;
+}
+
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+nav ul {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    padding: 0 20px;
+    list-style: none;
+    background: linear-gradient(90deg, #000, #121212);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    gap: 10px;
+    margin-right: auto;
+}
+
+.brand img {
+    width: 42px;
+}
+
+/* ========================= */
+/* FANCY NAV BUTTONS */
+/* ========================= */
+.nav-btn {
+    position: relative;
+    padding: 10px 22px;
+    margin-left: 16px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+    border-radius: 999px;
+    color: white;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+    transition: all 0.35s ease;
+    overflow: hidden;
+}
+
+/* Shiny sweep */
+.nav-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.5),
+        transparent
+    );
+    transform: translateX(-120%);
+    transition: transform 0.7s ease;
+}
+
+.nav-btn:hover::before {
+    transform: translateX(120%);
+}
+
+.nav-btn:hover {
+    background: linear-gradient(135deg, #1db954, #00ffd5);
+    color: black;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow:
+        0 10px 30px rgba(29,185,84,0.55),
+        0 0 18px rgba(0,255,213,0.6);
+}
+
+.nav-btn.active {
+    background: linear-gradient(135deg, #1db954, #00ffd5);
+    color: black;
+    box-shadow: 0 0 25px rgba(29,185,84,0.85);
+}
+
+.nav-btn:active {
+    transform: scale(0.94);
+}
+
+/* ========================= */
+/* MAIN GLASS CONTAINER */
+/* ========================= */
+.container {
+    width: 75%;
+    margin: 30px auto;
+    padding: 30px;
+    min-height: 72vh;
+    display: flex;
+    border-radius: 22px;
+    background:
+        linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.03)),
+        linear-gradient(135deg, #1a1a2e 0%, #16213e 25%, #0f3460 50%, #1db954 100%);
+    background-size: cover;
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--border);
+    box-shadow: 0 30px 80px rgba(0,0,0,0.7);
+    animation: floatIn 1.2s ease;
+    background-image: url(bg.jpg);
+}
+
+@keyframes floatIn {
+    from { opacity: 0; transform: translateY(40px) scale(0.97); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ========================= */
+/* SONG LIST */
+/* ========================= */
+.songItemContainer {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.songItem {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--glass);
+    margin: 14px 0;
+    padding: 0 16px;
+    border-radius: 40px;
+    border: 1px solid var(--border);
+    backdrop-filter: blur(14px);
+    transition: all 0.35s ease;
+}
+
+.songItem:hover {
+    transform: translateY(-4px) scale(1.02);
+    background: linear-gradient(90deg, #1db954, #00ffcc);
+    color: black;
+    box-shadow: 0 15px 40px rgba(29,185,84,0.4);
+}
+
+.songItem img {
+    width: 44px;
+    border-radius: 50%;
+    transition: transform 0.4s ease;
+}
+
+.songItem:hover img {
+    transform: rotate(8deg) scale(1.15);
+}
+
+.songName {
+    font-weight: 600;
+}
+
+/* ========================= */
+/* PLAY ICON */
+/* ========================= */
+.timestamp i {
+    font-size: 1.4rem;
+    color: var(--accent);
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.timestamp i:hover {
+    transform: scale(1.4);
+    color: black;
+}
+
+/* ========================= */
+/* BOTTOM PLAYER */
+/* ========================= */
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 140px;
+    background: linear-gradient(180deg, #020617, #000);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -20px 50px rgba(0,0,0,0.8);
+}
+
+/* PROGRESS BAR */
+#myProgressBar {
+    width: 80%;
+    height: 6px;
+    border-radius: 10px;
+    appearance: none;
+    background: linear-gradient(90deg, #1db954, #00ffd5);
+    cursor: pointer;
+}
+
+/* CONTROLS */
+.icons {
+    margin-top: 14px;
+    display: flex;
+    gap: 35px;
+}
+
+.icons i {
+    font-size: 2.6rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.icons i:hover {
+    color: var(--accent);
+    transform: scale(1.35) rotate(-6deg);
+    text-shadow: 0 0 18px rgba(29,185,84,0.8);
+}
+
+/* SONG INFO */
+.songInfo {
+    position: absolute;
+    left: 6%;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* PLAYING EFFECT */
+.playing {
+    box-shadow: 0 0 35px rgba(29,185,84,0.6);
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+@media (max-width: 1100px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .nav-btn {
+        padding: 8px 14px;
+        font-size: 0.85rem;
+    }
+}
+body{
+    font-family: 'Inter', sans-serif;
+    color:white;
+    overflow-x:hidden;
+    background:#020617;
+}
+
+/* MAIN FLOWING BACKGROUND */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+      radial-gradient(circle at 15% 25%, #1db95466, transparent 45%),
+      radial-gradient(circle at 85% 35%, #00ffd566, transparent 45%),
+      radial-gradient(circle at 50% 85%, #3b82f666, transparent 50%),
+      linear-gradient(120deg,#020617,#020617,#020617);
+    background-size:200% 200%;   /* reduced */
+    animation: bgFlow 40s linear infinite;
+    z-index:-5;
+    transform: translateZ(0);
+    will-change: background-position;
+}
+
+
+@keyframes bgFlow{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+.energy-layer{
+    position:fixed;
+    inset:0;
+    background:
+      repeating-linear-gradient(
+        120deg,
+        rgba(29,185,84,0.04),
+        rgba(29,185,84,0.04) 1px,
+        transparent 1px,
+        transparent 80px
+      );
+    animation: energyMove 80s linear infinite; /* slower */
+    z-index:-4;
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+
+@keyframes energyMove{
+    from{transform:translateX(0);}
+    to{transform:translateX(-50%);}
+}
+.music-breath{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background:radial-gradient(circle at center,
+        rgba(29,185,84,0.12),
+        transparent 65%);
+    animation: breath 6s ease-in-out infinite;
+    z-index:-3;
+    will-change: opacity;
+}
+
+
+@keyframes breath{
+    0%{opacity:0.25;}
+    50%{opacity:0.6;}
+    100%{opacity:0.25;}
+}
+.light-particles span{
+    position:fixed;
+    top:100vh;
+    width:8px;
+    height:8px;
+    background:rgba(0,255,213,0.6);
+    border-radius:50%;
+    filter:blur(1px);
+    animation: floatUp linear infinite;
+    z-index:-2;
+    will-change: transform;
+}
+/* This removes the blue color and underline from your links */
+.nav-btn a {
+    text-decoration: none;
+    color: inherit; /* Makes the text stay white or turn black on hover */
+    display: block; /* Makes the entire button area clickable */
+    width: 100%;
+    height: 100%;
+}
+
+/* Optional: This ensures the text turns black when you hover over the button */
+.nav-btn:hover a {
+    color: black;
+}
+/* Remove default link styles */
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block; /* Essential for PC click accuracy */
+}
+
+.nav-btn {
+    /* Ensure no margins are blocking the click */
+    margin-left: 10px; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease; /* Faster transition for PC */
+}
+
+/* Instant feedback on hover */
+.nav-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.2);
+}
+/* ===== AMBIENT BACKGROUND ===== */
+
+body {
+    background: linear-gradient(120deg, #000000, #021a14, #000000);
+    background-size: 300% 300%;
+    animation: bgMove 15s ease infinite;
+}
+
+@keyframes bgMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+
+/* ===== FLOATING ORBS ===== */
+
+.ambient-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, #00ffcc, transparent);
+    animation: floatOrb 10s infinite ease-in-out;
+    filter: blur(40px);
+}
+
+.orb1 {
+    width: 200px;
+    height: 200px;
+    left: 10%;
+    top: 20%;
+    animation-delay: 0s;
+}
+
+.orb2 {
+    width: 300px;
+    height: 300px;
+    right: 10%;
+    top: 40%;
+    animation-delay: 2s;
+}
+
+.orb3 {
+    width: 150px;
+    height: 150px;
+    left: 40%;
+    bottom: 10%;
+    animation-delay: 4s;
+}
+
+.orb4 {
+    width: 250px;
+    height: 250px;
+    right: 30%;
+    bottom: 20%;
+    animation-delay: 6s;
+}
+
+@keyframes floatOrb {
+    0%,100% {transform: translateY(0);}
+    50% {transform: translateY(-50px);}
+}
+
+
+/* ===== PARTICLES ===== */
+
+.particles::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(#00ffcc 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: moveParticles 20s linear infinite;
+    opacity: 0.2;
+}
+
+@keyframes moveParticles {
+    from {transform: translateY(0);}
+    to {transform: translateY(-200px);}
+}
+
+
+/* ===== LIGHT BEAM ===== */
+
+.light-beam {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(0,255,200,0.2),
+        transparent
+    );
+    animation: beamMove 6s infinite;
+}
+
+@keyframes beamMove {
+    0% {left: -300px;}
+    100% {left: 100%;}
+}
+
+
+/* ===== MUSIC PULSE EFFECT ===== */
+
+.music-player {
+    animation: pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 10px #00ffcc;
+    }
+    50% {
+        box-shadow: 0 0 30px #00ffcc;
+    }
+    100% {
+        box-shadow: 0 0 10px #00ffcc;
+    }
+}
+.logo img {
+    animation: logoGlow 3s infinite;
+}
+
+@keyframes logoGlow {
+    0%,100% {
+        filter: drop-shadow(0 0 5px #00ffcc);
+    }
+    50% {
+        filter: drop-shadow(0 0 20px #00ffcc);
+    }
+}
+.container {
+    backdrop-filter: blur(10px);
+    animation: containerFloat 6s ease-in-out infinite;
+}
+
+@keyframes containerFloat {
+    0%,100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+
