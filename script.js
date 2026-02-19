@@ -11,15 +11,15 @@ let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
     {songName: "Teenage Dream", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489701/1_aczxv8.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489312/1_jwx5em.jpg"},
-    {songName: "I Think They Call This Love", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489702/2_nmjxph.mp3", coverPath: "covers/2.jpg"},
-    {songName: "Attention", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489702/3_thv6ba.mp3", coverPath: "covers/3.jpg"},
-    {songName: "Night Changes", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489739/4_srxh4s.mp3", coverPath: "covers/4.jpg"},
-    {songName: "death bed", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489708/5_mnz7lp.mp3", coverPath: "covers/5.jpg"},
-    {songName: "Sweater Weather", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489711/6_pcmrsw.mp3", coverPath: "covers/6.jpg"},
-    {songName: "Let Me Love You", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489704/7_alwpcj.mp3", coverPath: "covers/7.jpg"},
-    {songName: "Blinding Lights", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489709/8_rxlcn1.mp3", coverPath: "covers/8.jpg"},
-    {songName: "BIRDS OF A FEATHER", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489706/9_aixycl.mp3", coverPath: "covers/9.jpg"},
-    {songName: "We Don't Talk Anymore", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489712/10_cy3jax.mp3", coverPath: "covers/10.jpg"},
+    {songName: "I Think They Call This Love", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489702/2_nmjxph.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489313/2_occsxd.jpg"},
+    {songName: "Attention", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489702/3_thv6ba.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489312/3_lcqdyt.jpg"},
+    {songName: "Night Changes", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489739/4_srxh4s.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489312/4_nqvzhh.jpg"},
+    {songName: "death bed", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489708/5_mnz7lp.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489313/5_jqsbno.jpg"},
+    {songName: "Sweater Weather", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489711/6_pcmrsw.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489313/6_zafges.jpg"},
+    {songName: "Let Me Love You", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489704/7_alwpcj.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489314/7_pypzhp.jpg"},
+    {songName: "Blinding Lights", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489709/8_rxlcn1.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489314/8_fkrs0b.jpg"},
+    {songName: "BIRDS OF A FEATHER", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489706/9_aixycl.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489313/9_hrpky3.jpg"},
+    {songName: "We Don't Talk Anymore", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489712/10_cy3jax.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489314/10_al4sow.jpg"},
 ];
 
 // Initialize first song
@@ -222,6 +222,7 @@ document.addEventListener('mousemove', (e) => {
         ticking = true;
     }
 });
+
 
 
 
