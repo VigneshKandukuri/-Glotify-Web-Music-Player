@@ -10,7 +10,7 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "Teenage Dream", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Teenage Dream", filePath: "songs/1.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489312/1_jwx5em.jpg"},
     {songName: "I Think They Call This Love", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
     {songName: "Attention", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
     {songName: "Night Changes", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
@@ -222,3 +222,4 @@ document.addEventListener('mousemove', (e) => {
         ticking = true;
     }
 });
+
