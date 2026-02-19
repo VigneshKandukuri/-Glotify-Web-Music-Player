@@ -11,7 +11,7 @@ let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
     {songName: "Tum Se Hi", filePath: "songs/21.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489318/21_djua5o.jpg"},
-    {songName: "Tere Hone Laga Hoon", filePath: "songs/22.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489312/22_afcpwz.jpg"},
+    {songName: " Tere Hone Laga Hoon  ", filePath: "songs/22.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489312/22_afcpwz.jpg"},
     {songName: "Pehli Nazar Mein", filePath: "songs/23.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489312/23_muyg1d.jpg"},
     {songName: "Tere Bina", filePath: "songs/24.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489312/24_qyylc3.jpg"},
     {songName: "O Re Piya", filePath: "songs/25.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489314/25_fclhyy.jpg"},
@@ -201,6 +201,7 @@ window.addEventListener('resize',()=>{
     energyLayer.style.transform = `translate3d(0,0,0)`;
     musicBreath.style.transform = `translate3d(0,0,0)`;
 });
+
 
 
 
