@@ -10,16 +10,16 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "Neele Neele Ambar Par - Male Version", filePath: "songs/11.mp3", coverPath: "covers/11.jpg"},
-    {songName: "Pal Pal Dil Ke Paas", filePath: "songs/12.mp3", coverPath: "covers/12.jpg"},
-    {songName: "Yeh Raaten Yeh Mausam", filePath: "songs/13.mp3", coverPath: "covers/13.jpg"},
-    {songName: "Samne Yeh Kaun Aaya", filePath: "songs/14.mp3", coverPath: "covers/14.jpg"},
-    {songName: "Abhi Na Jao Chhod Kar", filePath: "songs/15.mp3", coverPath: "covers/15.jpg"},
-    {songName: "Itna Na Mujhse Tu Pyar Badha", filePath: "songs/16.mp3", coverPath: "covers/16.jpg"},
-    {songName: "Dekha Ek Khwab", filePath: "songs/17.mp3", coverPath: "covers/17.jpg"},
-    {songName: "Ham Tere Pyar Mein", filePath: "songs/18.mp3", coverPath: "covers/18.jpg"},
-    {songName: "Main Koi Aisa Geet Gaoon", filePath: "songs/19.mp3", coverPath: "covers/19.jpg"},
-    {songName: "Aa Chal Ke Tujhe", filePath: "songs/20.mp3", coverPath: "covers/20.jpg"},
+    {songName: "Neele Neele Ambar Par - Male Version", filePath: "songs/11.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489315/11_i5bzne.jpg"},
+    {songName: "Pal Pal Dil Ke Paas", filePath: "songs/12.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489314/12_tycl2j.jpg"},
+    {songName: "Yeh Raaten Yeh Mausam", filePath: "songs/13.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489314/13_njorv2.jpg"},
+    {songName: "Samne Yeh Kaun Aaya", filePath: "songs/14.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489315/14_enivs7.jpg"},
+    {songName: "Abhi Na Jao Chhod Kar", filePath: "songs/15.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489316/15_r7ioqt.jpg"},
+    {songName: "Itna Na Mujhse Tu Pyar Badha", filePath: "songs/16.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489317/16_tagc8l.jpg"},
+    {songName: "Dekha Ek Khwab", filePath: "songs/17.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489317/17_tc8okc.jpg"},
+    {songName: "Ham Tere Pyar Mein", filePath: "songs/18.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489317/18_a38sfh.png"},
+    {songName: "Main Koi Aisa Geet Gaoon", filePath: "songs/19.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489318/19_lrrqpf.jpg"},
+    {songName: "Aa Chal Ke Tujhe", filePath: "songs/20.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489318/20_xkhopb.png"},
 ];
 
 // Initialize first song
@@ -201,5 +201,6 @@ window.addEventListener('resize',()=>{
     energyLayer.style.transform = `translate3d(0,0,0)`;
     musicBreath.style.transform = `translate3d(0,0,0)`;
 });
+
 
 
