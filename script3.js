@@ -10,16 +10,16 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "Finding Her", filePath: "songs/31.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489315/31_o9nkrp.png"},
-    {songName: "Iraaday", filePath: "songs/32.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489316/32_snxxkh.jpg"},
-    {songName: "Kaise Ab Kahein", filePath: "songs/33.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489316/33_ybfs9k.png"},
-    {songName: "Ishq Hai", filePath: "songs/34.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489316/34_kezacs.jpg"},
-    {songName: "Dil Tu Jaan Tu", filePath: "songs/35.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489317/35_utfegq.jpg"},
-    {songName: " Tum Ho Toh", filePath: "songs/36.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489317/36_epxrf1.jpg"},
-    {songName: "Apna Bana Le", filePath: "songs/37.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489318/37_ytmsur.jpg"},
-    {songName: "Dooron Dooron", filePath: "songs/38.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489318/38_lljgic.jpg"},
-    {songName: "Zulfein", filePath: "songs/39.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489318/39_bwys4c.jpg"},
-    {songName: "Tainu Khabar Nahi", filePath: "songs/40.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489318/40_b7qfqy.jpg"},
+    {songName: "Finding Her", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489805/31_vsivwp.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489315/31_o9nkrp.png"},
+    {songName: "Iraaday", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489808/32_b3u25j.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489316/32_snxxkh.jpg"},
+    {songName: "Kaise Ab Kahein", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489798/33_uqj3eg.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489316/33_ybfs9k.png"},
+    {songName: "Ishq Hai", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489790/34_t3g8lj.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489316/34_kezacs.jpg"},
+    {songName: "Dil Tu Jaan Tu", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489796/35_czwdvw.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489317/35_utfegq.jpg"},
+    {songName: " Tum Ho Toh", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489796/36_j63guy.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489317/36_epxrf1.jpg"},
+    {songName: "Apna Bana Le", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489806/37_csqirv.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489318/37_ytmsur.jpg"},
+    {songName: "Dooron Dooron", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489806/38_b45hhu.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489318/38_lljgic.jpg"},
+    {songName: "Zulfein", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489810/39_nwzlsn.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489318/39_bwys4c.jpg"},
+    {songName: "Tainu Khabar Nahi", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489814/40_btove8.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489318/40_b7qfqy.jpg"},
 ];
 
 // Initialize first song
@@ -201,6 +201,7 @@ window.addEventListener('resize',()=>{
     energyLayer.style.transform = `translate3d(0,0,0)`;
     musicBreath.style.transform = `translate3d(0,0,0)`;
 });
+
 
 
 
