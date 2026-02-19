@@ -10,16 +10,16 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "Tum Se Hi", filePath: "songs/21.mp3", coverPath: "covers/21.jpg"},
-    {songName: "Tere Hone Laga Hoon", filePath: "songs/22.mp3", coverPath: "covers/22.jpg"},
-    {songName: "Pehli Nazar Mein", filePath: "songs/23.mp3", coverPath: "covers/23.jpg"},
-    {songName: "Tere Bina", filePath: "songs/24.mp3", coverPath: "covers/24.jpg"},
-    {songName: "O Re Piya", filePath: "songs/25.mp3", coverPath: "covers/25.jpg"},
-    {songName: "Main Agar Kahoon", filePath: "songs/26.mp3", coverPath: "covers/26.jpg"},
-    {songName: "Teri Ore", filePath: "songs/27.mp3", coverPath: "covers/27.jpg"},
-    {songName: "Tum Tak", filePath: "songs/28.mp3", coverPath: "covers/28.jpg"},
-    {songName: "Ishq Bulaava", filePath: "songs/29.mp3", coverPath: "covers/29.jpg"},
-    {songName: "Pee Loon", filePath: "songs/30.mp3", coverPath: "covers/30.jpg"},
+    {songName: "Tum Se Hi", filePath: "songs/21.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489318/21_djua5o.jpg"},
+    {songName: "Tere Hone Laga Hoon", filePath: "songs/22.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489312/22_afcpwz.jpg"},
+    {songName: "Pehli Nazar Mein", filePath: "songs/23.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489312/23_muyg1d.jpg"},
+    {songName: "Tere Bina", filePath: "songs/24.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489312/24_qyylc3.jpg"},
+    {songName: "O Re Piya", filePath: "songs/25.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489314/25_fclhyy.jpg"},
+    {songName: "Main Agar Kahoon", filePath: "songs/26.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489313/26_pqyaw5.jpg"},
+    {songName: "Teri Ore", filePath: "songs/27.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489313/27_rpjlhy.jpg"},
+    {songName: "Tum Tak", filePath: "songs/28.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489314/28_thyhvl.jpg"},
+    {songName: "Ishq Bulaava", filePath: "songs/29.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489314/29_bwruh9.jpg"},
+    {songName: "Pee Loon", filePath: "songs/30.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489314/30_i7zbpw.jpg"},
 ];
 
 // Initialize first song
@@ -201,5 +201,6 @@ window.addEventListener('resize',()=>{
     energyLayer.style.transform = `translate3d(0,0,0)`;
     musicBreath.style.transform = `translate3d(0,0,0)`;
 });
+
 
 
