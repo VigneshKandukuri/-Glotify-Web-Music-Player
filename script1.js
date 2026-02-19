@@ -10,16 +10,16 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "Neele Neele Ambar Par - Male Version", filePath: "songs/11.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489315/11_i5bzne.jpg"},
-    {songName: "Pal Pal Dil Ke Paas", filePath: "songs/12.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489314/12_tycl2j.jpg"},
-    {songName: "Yeh Raaten Yeh Mausam", filePath: "songs/13.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489314/13_njorv2.jpg"},
-    {songName: "Samne Yeh Kaun Aaya", filePath: "songs/14.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489315/14_enivs7.jpg"},
-    {songName: "Abhi Na Jao Chhod Kar", filePath: "songs/15.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489316/15_r7ioqt.jpg"},
-    {songName: "Itna Na Mujhse Tu Pyar Badha", filePath: "songs/16.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489317/16_tagc8l.jpg"},
-    {songName: "Dekha Ek Khwab", filePath: "songs/17.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489317/17_tc8okc.jpg"},
-    {songName: "Ham Tere Pyar Mein", filePath: "songs/18.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489317/18_a38sfh.png"},
-    {songName: "Main Koi Aisa Geet Gaoon", filePath: "songs/19.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489318/19_lrrqpf.jpg"},
-    {songName: "Aa Chal Ke Tujhe", filePath: "songs/20.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489318/20_xkhopb.png"},
+    {songName: "Neele Neele Ambar Par - Male Version", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489711/11_bihb0z.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489315/11_i5bzne.jpg"},
+    {songName: "Pal Pal Dil Ke Paas", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489777/12_vrxm5b.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489314/12_tycl2j.jpg"},
+    {songName: "Yeh Raaten Yeh Mausam", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489733/13_mds59b.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489314/13_njorv2.jpg"},
+    {songName: "Samne Yeh Kaun Aaya", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489715/14_lulduj.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489315/14_enivs7.jpg"},
+    {songName: "Abhi Na Jao Chhod Kar", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489779/15_i3md8l.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489316/15_r7ioqt.jpg"},
+    {songName: "Itna Na Mujhse Tu Pyar Badha", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489716/16_cowzy5.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489317/16_tagc8l.jpg"},
+    {songName: "Dekha Ek Khwab", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489721/17_yoxj7l.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489317/17_tc8okc.jpg"},
+    {songName: "Ham Tere Pyar Mein", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489779/18_y2r3p5.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489317/18_a38sfh.png"},
+    {songName: "Main Koi Aisa Geet Gaoon", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489724/19_z85krl.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489318/19_lrrqpf.jpg"},
+    {songName: "Aa Chal Ke Tujhe", filePath: "https://res.cloudinary.com/dzkvuk2ha/video/upload/v1771489731/20_ccuzu5.mp3", coverPath: "https://res.cloudinary.com/dzkvuk2ha/image/upload/v1771489318/20_xkhopb.png"},
 ];
 
 // Initialize first song
@@ -201,6 +201,7 @@ window.addEventListener('resize',()=>{
     energyLayer.style.transform = `translate3d(0,0,0)`;
     musicBreath.style.transform = `translate3d(0,0,0)`;
 });
+
 
 
 
