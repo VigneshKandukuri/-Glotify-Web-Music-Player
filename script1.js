@@ -201,6 +201,72 @@ window.addEventListener('resize',()=>{
     energyLayer.style.transform = `translate3d(0,0,0)`;
     musicBreath.style.transform = `translate3d(0,0,0)`;
 });
+// NAVBAR ACTIVE BUTTON FIX
+
+const navButtons = document.querySelectorAll(".nav-btn");
+
+navButtons.forEach(button => {
+
+    button.addEventListener("click", function () {
+
+        // remove active from all buttons
+        navButtons.forEach(btn => btn.classList.remove("active"));
+
+        // add active to clicked button
+        this.classList.add("active");
+
+    });
+
+});const navBtns = document.querySelectorAll(".nav-btn");
+
+navBtns.forEach(btn => {
+
+    const link = btn.querySelector("a");
+
+    if(link.href === window.location.href){
+        btn.classList.add("active");
+    }
+
+    btn.addEventListener("click", function(){
+
+        navBtns.forEach(b => b.classList.remove("active"));
+        this.classList.add("active");
+
+    });
+
+});
+document.addEventListener("DOMContentLoaded", function () {
+
+    const currentPage = window.location.pathname.split("/").pop();
+
+    const navButtons = document.querySelectorAll(".nav-btn");
+
+    navButtons.forEach(button => {
+
+        const link = button.querySelector("a").getAttribute("href");
+
+        if(link === currentPage){
+            button.classList.add("active");
+        } else {
+            button.classList.remove("active");
+        }
+
+    });
+
+});
+document.addEventListener("DOMContentLoaded", function () {
+
+    const currentPage = location.href;
+
+    document.querySelectorAll(".nav-btn a").forEach(link => {
+
+        if(currentPage.includes(link.getAttribute("href"))){
+            link.parentElement.classList.add("active");
+        }
+
+    });
+
+});
 
 
 
